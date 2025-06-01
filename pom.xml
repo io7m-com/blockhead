@@ -25,7 +25,7 @@
     <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
 
     <!-- io7m dependencies. -->
-    <com.io7m.quarrel.version>1.6.1</com.io7m.quarrel.version>
+    <com.io7m.quarrel.version>1.8.0</com.io7m.quarrel.version>
 
     <!-- Third-party dependencies. -->
     <com.squareup.okio.version>3.11.0</com.squareup.okio.version>
