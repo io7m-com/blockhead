@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <parent>
@@ -20,6 +18,8 @@
   <url>https://www.io7m.com/software/blockhead</url>
 
   <properties>
+    <io7m.workID>23b22431-d778-4f8c-a1f2-07190c2cf3a5</io7m.workID>
+
     <!-- Configuration. -->
     <io7m.api.previousVersion>1.0.0</io7m.api.previousVersion>
     <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
@@ -246,6 +246,8 @@
                   ${project.build.directory}/generated-sources/string-template/com/io7m/blockhead/BHVersion.java
                 </outputFile>
                 <properties>
+    <io7m.workID>23b22431-d778-4f8c-a1f2-07190c2cf3a5</io7m.workID>
+
                   <appVersion>${project.version}</appVersion>
                   <appBuild>${buildNumber}</appBuild>
                 </properties>
@@ -299,7 +301,7 @@
                     <Main-Class>com.io7m.blockhead.BHMain</Main-Class>
                   </manifestEntries>
                 </transformer>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"></transformer>
               </transformers>
             </configuration>
           </execution>
@@ -320,7 +322,7 @@
                     <Main-Class>com.io7m.blockhead.BHMain</Main-Class>
                   </manifestEntries>
                 </transformer>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"></transformer>
               </transformers>
               <outputFile>${project.build.directory}/oci/blockhead/blockhead.jar</outputFile>
             </configuration>
